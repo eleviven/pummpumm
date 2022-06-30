@@ -1,0 +1,7 @@
+/* Collapse */
+.collapse--show {
+  display: block;
+}
+.collapse:not(.collapse--show) {
+  display: none;
+}

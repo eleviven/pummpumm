@@ -1,0 +1,143 @@
+/********* Header *********/
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-default);
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  margin-right: -7px;
+}
+@media (max-width: 992px) {
+  .header__inner {
+    height: 57px;
+    margin: 0 -7px;
+  }
+}
+
+/* Header Brand */
+.header__brand {
+  position: relative;
+  z-index: 99;
+  flex-shrink: 0;
+  width: 201px;
+  height: 28px;
+  margin: 0 10px;
+}
+.header__brand-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header__brand-image {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .header__brand {
+    width: 140px;
+    height: auto;
+  }
+}
+@media (max-width: 769px) {
+  .header__brand {
+    width: 120px;
+  }
+}
+
+/* Header Nav */
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin: 0 -5px;
+}
+.header__nav-item {
+  padding: 0 5px;
+}
+.header__nav-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  border-radius: 48px;
+  padding: 10px 20px;
+  padding-top: 7px;
+  white-space: nowrap;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+.header__nav-item-link:not(.header__nav-item-link--active):hover {
+  background-color: var(--color-hint);
+}
+.header__nav-item-link--active {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Header Menu */
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 0 -5.5px;
+}
+.header__menu-item {
+  padding: 0 5.5px;
+}
+
+/* Header Hamburger Button */
+.header__hamburger {
+  flex: 1;
+  display: none;
+  margin-right: 5px;
+  line-height: 1;
+}
+@media (max-width: 992px) {
+  .header__hamburger {
+    display: block;
+  }
+}
+@media (max-width: 769px) {
+  .header__hamburger {
+    flex: inherit;
+  }
+}
+
+/* Header Collapse */
+.header__collapse {
+  flex: 1;
+}
+@media (min-width: 993px) {
+  .header__collapse {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) {
+  .header__collapse {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-gray);
+  }
+  .header__collapse .header__nav {
+    flex-direction: column;
+  }
+  .header__collapse .header__nav-item {
+    width: 100%;
+  }
+  .header__collapse .header__nav-item-link {
+    border-radius: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

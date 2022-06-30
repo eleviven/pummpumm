@@ -1,0 +1,44 @@
+/********* Icon Button *********/
+.icon-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 100px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.icon-button > svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Icon Button Variants */
+.icon-button {
+  color: var(--color-primary);
+  background-color: var(--color-default);
+}
+.icon-button:hover {
+  color: var(--color-primary);
+  background-color: var(--color-hint);
+}
+/* Icon Button Sizing */
+.icon-button {
+  width: 42px;
+  height: 42px;
+}
+.icon-button > svg {
+  width: 26px;
+  height: 26px;
+}
+.icon-button--size-sm {
+  width: 36px;
+  height: 36px;
+}
+.icon-button--size-sm > svg {
+  width: 22px;
+  height: 22px;
+}
