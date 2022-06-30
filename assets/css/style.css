@@ -1,11 +1,15 @@
 @import url(./normalize.css);
 @import url(./fonts.css);
+@import url(./button.css);
 @import url(./header.css);
 @import url(./icon-button.css);
 @import url(./modules.css);
+@import url(./main-carousel.css);
+@import url(./features.css);
 
-/********* Color Palette *********/
+/********* Variables *********/
 :root {
+  /* Colors Palette */
   --color-hint: #ddebf5;
   --color-primary: #22425a;
   --color-default: #fff;
@@ -13,10 +17,16 @@
   --color-white: #fff;
   --color-black: #000;
   --color-orange: #ff7144;
+  --color-orange-dark: #ff5d2a;
   --color-green: #97a796;
   --color-blue: #b3d1f8;
   --color-gray: #eee;
   --color-gray-light: #fafafa;
+  --color-gray-dark: #292c35;
+  /* Border Radius */
+  --rounded-lg: 30px;
+  --rounded-xl: 100px;
+  --rounded-full: 100%;
 }
 /********* General *********/
 body {
