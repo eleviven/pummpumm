@@ -1,0 +1,17 @@
+.main-carousel {
+  position: relative;
+}
+.main-carousel__slide {
+  height: 850px;
+  user-select: none;
+}
+@media (max-width: 769px) {
+  .main-carousel__slide {
+    height: 75vh
+  }
+}
+.main-carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
