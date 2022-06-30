@@ -55,29 +55,25 @@
 .header__nav {
   display: flex;
   align-items: center;
-  margin: 0 -5px;
+  margin: 0 -15px;
 }
 .header__nav-item {
-  padding: 0 5px;
+  padding: 0 15px;
 }
 .header__nav-item-link {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-primary);
-  border-radius: 48px;
-  padding: 10px 20px;
-  padding-top: 7px;
   white-space: nowrap;
   font-size: 1rem;
   transition: background-color 0.2s ease;
 }
-.header__nav-item-link:not(.header__nav-item-link--active):hover {
-  background-color: var(--color-hint);
-}
 .header__nav-item-link--active {
   color: var(--color-white);
   background-color: var(--color-primary);
+  border-radius: 48px;
+  padding: 8.5px 20px;
   font-weight: 500;
 }
 

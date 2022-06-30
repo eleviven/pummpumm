@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 .icon-button > svg {
   display: flex;
