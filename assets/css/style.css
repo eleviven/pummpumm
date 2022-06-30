@@ -1,11 +1,13 @@
 @import url(./normalize.css);
 @import url(./fonts.css);
+@import url(./typography.css);
 @import url(./button.css);
 @import url(./header.css);
 @import url(./icon-button.css);
 @import url(./modules.css);
 @import url(./main-carousel.css);
 @import url(./features.css);
+@import url(./section-header.css);
 
 /********* Variables *********/
 :root {
@@ -27,12 +29,25 @@
   --rounded-lg: 30px;
   --rounded-xl: 100px;
   --rounded-full: 100%;
+  /* Font Sizes */
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 3.125rem;
 }
 /********* General *********/
 body {
   background-color: var(--color-default);
   font-size: 16px;
   font-family: "RadionB", sans-serif;
+}
+@media (max-width: 769px) {
+  body {
+    font-size: 14px;
+  }
 }
 a:focus-within,
 button:focus-within {

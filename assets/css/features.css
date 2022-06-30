@@ -1,3 +1,4 @@
+/********* Features *********/
 .features {
   padding: 67px 0;
 }
@@ -32,12 +33,11 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
-  width: 382px;
+  width: 389px;
   padding-top: 33px;
 }
 .features__brief-title {
-  font-size: 29px;
-  line-height: 36px;
+  line-height: 1.2;
   font-weight: 400;
 }
 @media (max-width: 996px) {
@@ -46,18 +46,11 @@
     width: 100%;
     padding-top: 0;
   }
-  .features__brief-title {
-    font-size: 24px;
-  }
 }
 @media (max-width: 769px) {
   .features__brief {
     align-items: center;
     text-align: center;
-  }
-  .features__brief-title {
-    line-height: 1.2;
-    font-size: 20px;
   }
 }
 .features__stack {
@@ -89,6 +82,8 @@
     margin-bottom: 3px;
   }
 }
+
+/* Feature Card */
 .feature__card {
   position: relative;
   display: flex;
@@ -111,7 +106,7 @@
 }
 .feature__card-title {
   margin-top: 6px;
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   font-weight: 500;
 }
 .feature__card-description {
@@ -119,6 +114,6 @@
   width: 60%;
   margin-top: 6px;
   opacity: 0.7;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   font-weight: 400;
 }

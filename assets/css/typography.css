@@ -1,0 +1,43 @@
+/********* Typography *********/
+h2,
+.h2 {
+  font-size: var(--font-size-4xl);
+}
+h3,
+.h3 {
+  font-size: var(--font-size-3xl);
+}
+h4,
+.h4 {
+  font-size: var(--font-size-2xl);
+}
+
+@media (max-width: 992px) {
+  h2,
+  .h2 {
+    font-size: var(--font-size-3xl);
+  }
+  h3,
+  .h3 {
+    font-size: var(--font-size-2xl);
+  }
+  h4,
+  .h4 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+@media (max-width: 769px) {
+  h2,
+  .h2 {
+    font-size: var(--font-size-2xl);
+  }
+  h3,
+  .h3 {
+    font-size: var(--font-size-xl);
+  }
+  h4,
+  .h4 {
+    font-size: var(--font-size-lg);
+  }
+}
