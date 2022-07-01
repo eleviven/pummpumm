@@ -17,14 +17,7 @@ class Carousel {
     };
     this.options = { ...this.defaultOptions, options };
     this.parent = target;
-    this.parentWidth = this.parent.offsetWidth;
     this.slides = [...this.parent.children];
-    this.totalSlide = this.slides.length;
-    this.displaySlideCount = this.options.items;
-    this.displaySlideWidth = this.parentWidth / this.options.items;
-    this.track;
-    this.trackWidth = this.displaySlideWidth * this.totalSlide;
-    this.state = { ...initialState };
 
     this.init();
   }
@@ -37,6 +30,14 @@ class Carousel {
   }
   init() {
     this.state = { ...initialState };
+    this.parentWidth = this.parent.offsetWidth;
+    this.totalSlide = this.slides.length;
+    this.displaySlideCount = this.options.items;
+    this.displaySlideWidth = this.parentWidth / this.options.items;
+    this.track;
+    this.trackWidth = this.displaySlideWidth * this.totalSlide;
+    this.state = { ...initialState };
+
     this.parent.style.overflow = "hidden";
     this.parent.innerHTML = "";
 
@@ -45,6 +46,15 @@ class Carousel {
     this.parent.addEventListener("mousedown", this.onDragStart);
     this.parent.addEventListener("mouseup", this.onDragEnd);
     this.parent.addEventListener("mouseleave", this.onDragEnd);
+    (() => {
+      let timeout;
+      window.addEventListener("resize", () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+          this.init();
+        }, 200);
+      });
+    })();
   }
   createTrack() {
     const track = document.createElement("div");
@@ -80,7 +90,7 @@ class Carousel {
     let translateX = x;
 
     this.track.style.transition = "transform 0.3s ease";
-    if (diff > 30) {
+    if (diff > 40) {
       if (direction === DIRECTIONS.LEFT) {
         translateX = lastX - this.displaySlideWidth;
       } else if (direction === DIRECTIONS.RIGHT) {
