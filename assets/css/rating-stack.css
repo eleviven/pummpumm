@@ -1,0 +1,20 @@
+/********* Rating Stack *********/
+.rating-stack {
+  display: flex;
+  align-items: center;
+  gap: 1.67px;
+}
+.rating-stack__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-dark);
+  background-color: var(--color-gray);
+  width: 20px;
+  height: 20px;
+  user-select: none;
+}
+.rating-stack__item--filled {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
