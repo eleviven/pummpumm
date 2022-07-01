@@ -4,5 +4,11 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+  margin-bottom: 34px;
   font-weight: 300;
+}
+@media (max-width: 769px) {
+  .section-header {
+    margin-bottom: 20px;
+  }
 }
