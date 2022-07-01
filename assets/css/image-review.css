@@ -1,0 +1,45 @@
+/********* Image Review *********/
+.image-review {
+  position: relative;
+  margin-bottom: 80px;
+}
+.image-review__inner {
+  position: relative;
+  width: 100%;
+  max-height: 705px;
+  border-radius: var(--rounded-sm);
+  overflow: hidden;
+  aspect-ratio: 3/2;
+}
+.image-review__inner::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-image: url(../img/subtract.svg);
+  width: 10%;
+  height: 19.3%;
+  background-size: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+.image-review__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-review__review {
+  position: absolute;
+  z-index: 1;
+  bottom: 25px;
+  left: 25px;
+  color: var(--color-gray-dark);
+  background: var(--color-white);
+  border-radius: var(--rounded-md);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  font-family: "Roboto", sans-serif;
+}

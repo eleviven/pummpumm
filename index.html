@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pumm Pumm</title>
+    <meta name="application-name" content="Pum Pum" />
+    <meta name="description" content="Discover modern and cool sofas" />
+    <meta name="keywords" content="" />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <header class="header">
-      <div class="container-fluid">
+      <div class="container">
         <div class="header__inner">
           <div class="header__hamburger">
             <button
               class="icon-button icon-button--size-sm"
               data-toggle="collapse"
               data-target="#headerCollapse"
+              aria-label="Menu"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +69,11 @@
           </div>
           <ul class="header__menu">
             <li class="header__menu-item">
-              <a href="#" class="icon-button icon-button--size-sm">
+              <a
+                href="#"
+                class="icon-button icon-button--size-sm"
+                aria-label="smile"
+              >
                 <svg
                   width="22"
                   height="22"
@@ -99,7 +107,11 @@
               </a>
             </li>
             <li class="header__menu-item">
-              <a href="#" class="icon-button icon-button--size-sm">
+              <a
+                href="#"
+                class="icon-button icon-button--size-sm"
+                aria-label="chart"
+              >
                 <svg
                   width="22"
                   height="22"
@@ -130,22 +142,24 @@
     </header>
     <!-- Main Carousel -->
     <section class="main-carousel">
-      <a href="#" class="main-carousel__slide">
+      <a href="#" class="main-carousel__slide" aria-label="New collection">
         <img
           src="./assets/img/banners/pexels-cottonbro-48660452.png"
+          alt=""
           class="main-carousel__image"
         />
       </a>
-      <a href="#" class="main-carousel__slide">
+      <a href="#" class="main-carousel__slide" aria-label="Popular collection">
         <img
           src="./assets/img/banners/pexels-cottonbro-4560045.png"
+          alt=""
           class="main-carousel__image"
         />
       </a>
     </section>
     <!-- Features -->
     <section class="features">
-      <div class="features__container">
+      <div class="features__container container">
         <div class="features__brief">
           <h3 class="features__brief-title">
             A modern generation of sofa. Lorem ipsum dolor sit amet.
@@ -196,8 +210,117 @@
         </div>
       </div>
     </section>
-    <!-- Module -->
-    <h2 class="section-header">3 módulos. Infinitas posibilidades.</h2>
+    <!-- Image Review -->
+    <section class="image-review">
+      <h2 class="section-header">3 módulos. Infinitas posibilidades.</h2>
+      <div class="container">
+        <div class="image-review__inner">
+          <img
+            src="./assets/img/banners/Captura de pantalla 2021-12-22 a las 16.36 5.jpg"
+            alt=""
+            class="image-review__image"
+            draggable="false"
+          />
+          <div class="image-review__review d--flex direction--column gap--2">
+            <div class="d--flex items--center gap--3">
+              <strong>Excellent</strong>
+              <div class="rating-stack">
+                <div class="rating-stack__item rating-stack__item--filled">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 9.91352L10.0417 9.15723L11.3125 13L7 9.91352ZM14 4.94654H8.64583L7 0L5.35417 4.94654H0L4.33334 8.01258L2.6875 12.9591L7.02083 9.89308L9.6875 8.01258L14 4.94654Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="rating-stack__item rating-stack__item--filled">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 9.91352L10.0417 9.15723L11.3125 13L7 9.91352ZM14 4.94654H8.64583L7 0L5.35417 4.94654H0L4.33334 8.01258L2.6875 12.9591L7.02083 9.89308L9.6875 8.01258L14 4.94654Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="rating-stack__item rating-stack__item--filled">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 9.91352L10.0417 9.15723L11.3125 13L7 9.91352ZM14 4.94654H8.64583L7 0L5.35417 4.94654H0L4.33334 8.01258L2.6875 12.9591L7.02083 9.89308L9.6875 8.01258L14 4.94654Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="rating-stack__item rating-stack__item--filled">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 9.91352L10.0417 9.15723L11.3125 13L7 9.91352ZM14 4.94654H8.64583L7 0L5.35417 4.94654H0L4.33334 8.01258L2.6875 12.9591L7.02083 9.89308L9.6875 8.01258L14 4.94654Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="rating-stack__item">
+                  <svg
+                    width="14"
+                    height="13"
+                    viewBox="0 0 14 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 9.91352L10.0417 9.15723L11.3125 13L7 9.91352ZM14 4.94654H8.64583L7 0L5.35417 4.94654H0L4.33334 8.01258L2.6875 12.9591L7.02083 9.89308L9.6875 8.01258L14 4.94654Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span><strong>4.9</strong> out of 5</span>
+            </div>
+            <div class="d--flex items--center justify--center gap--2">
+              <span><strong>123</strong> reviews on</span>
+              <svg
+                width="14"
+                height="13"
+                viewBox="0 0 14 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 9.91352L10.0417 9.15723L11.3125 13L7 9.91352ZM14 4.94654H8.64583L7 0L5.35417 4.94654H0L4.33334 8.01258L2.6875 12.9591L7.02083 9.89308L9.6875 8.01258L14 4.94654Z"
+                  fill="#44AE6F"
+                />
+              </svg>
+              <strong>Trustpilot</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
 
     <!-- Javascript -->
     <script src="./assets/js/modules.js"></script>
