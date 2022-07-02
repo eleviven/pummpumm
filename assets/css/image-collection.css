@@ -1,0 +1,19 @@
+/********* Image Collection *********/
+.image-collection .section-header {
+  margin-bottom: 59px;
+}
+.image-collection__container {
+  max-width: calc(var(--container-lg) + 32px);
+}
+.image-collection .row {
+  margin: -1.5px;
+}
+.image-collection [class^="col-"] {
+  padding: 1.5px;
+}
+.image-collection__filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
