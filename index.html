@@ -325,66 +325,113 @@
       </h2>
       <div class="image-collection__container container">
         <div class="image-collection__filter">
-          <div class="d--flex items--center gap--4">
+          <div class="d--flex direction--column direction--sm-row items--center gap--4">
             <span class="text--gray font--size-sm">Elige tu color</span>
             <div class="d--flex gap--4">
               <div
                 class="colorbox colorbox__active"
                 style="--color: #1c2d0f"
+                data-toggle="tab"
+                data-target="#collection-green"
+                data-active-class="colorbox__active"
               ></div>
-              <div class="colorbox" style="--color: #0b1b46"></div>
-              <div class="colorbox" style="--color: #bbc8d9"></div>
-              <div class="colorbox" style="--color: #bebab8"></div>
+              <div
+                class="colorbox"
+                style="--color: #0b1b46"
+                data-toggle="tab"
+                data-target="#collection-blue"
+                data-active-class="colorbox__active"
+              ></div>
+              <div
+                class="colorbox"
+                style="--color: #bbc8d9"
+                data-toggle="tab"
+                data-target="#collection-light-blue"
+                data-active-class="colorbox__active"
+              ></div>
+              <div
+                class="colorbox"
+                style="--color: #bebab8"
+                data-toggle="tab"
+                data-target="#collection-gray"
+                data-active-class="colorbox__active"
+              ></div>
             </div>
           </div>
           <button class="button button--variant-orange">Compra ahora</button>
         </div>
-        <div class="row">
-          <div class="col-12 col--lg-6">
+        <div class="tab__content">
+          <!-- Green -->
+          <div id="collection-green" class="tab__pane tab__pane--active">
             <div class="row">
-              <div class="col-12 col--sm-6">
-                <div class="collection-card">
-                  <img
-                    src="./assets/img/products/sofa-1.png"
-                    alt=""
-                    class="collection-card__image"
-                  />
-                  <div class="collection-card__badges">
-                    <div class="badge">3 Seater sofa</div>
-                    <div class="badge badge--variant-light">Desde 2500€</div>
+              <div class="col-12 col--lg-6">
+                <div class="row">
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">3 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-2.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">Single chair</div>
+                        <div class="badge badge--variant-light">
+                          Desde 1500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-3.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">2 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">3 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col--sm-6">
+              <div class="col-12 col--lg-6">
                 <div class="collection-card">
                   <img
-                    src="./assets/img/products/sofa-2.png"
-                    alt=""
-                    class="collection-card__image"
-                  />
-                  <div class="collection-card__badges">
-                    <div class="badge">Single chair</div>
-                    <div class="badge badge--variant-light">Desde 1500€</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col--sm-6">
-                <div class="collection-card">
-                  <img
-                    src="./assets/img/products/sofa-3.png"
-                    alt=""
-                    class="collection-card__image"
-                  />
-                  <div class="collection-card__badges">
-                    <div class="badge">2 Seater sofa</div>
-                    <div class="badge badge--variant-light">Desde 2500€</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col--sm-6">
-                <div class="collection-card">
-                  <img
-                    src="./assets/img/products/sofa-1.png"
+                    src="./assets/img/products/sofa-5.png"
                     alt=""
                     class="collection-card__image"
                   />
@@ -396,16 +443,249 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col--lg-6">
-            <div class="collection-card">
-              <img
-                src="./assets/img/products/sofa-5.png"
-                alt=""
-                class="collection-card__image"
-              />
-              <div class="collection-card__badges">
-                <div class="badge">3 Seater sofa</div>
-                <div class="badge badge--variant-light">Desde 2500€</div>
+          <!-- Blue  -->
+          <div id="collection-blue" class="tab__pane">
+            <div class="row">
+              <div class="col-12 col--lg-6">
+                <div class="row">
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">3 Seater blue</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-2.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">Single blue chair</div>
+                        <div class="badge badge--variant-light">
+                          Desde 1500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-3.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">2 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">3 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col--lg-6">
+                <div class="collection-card">
+                  <img
+                    src="./assets/img/products/sofa-5.png"
+                    alt=""
+                    class="collection-card__image"
+                  />
+                  <div class="collection-card__badges">
+                    <div class="badge">3 Seater sofa</div>
+                    <div class="badge badge--variant-light">Desde 2500€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Light Blue  -->
+          <div id="collection-light-blue" class="tab__pane">
+            <div class="row">
+              <div class="col-12 col--lg-6">
+                <div class="row">
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">Seater Light Blue</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2800€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-2.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">chair light blue</div>
+                        <div class="badge badge--variant-light">
+                          Desde 1500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-3.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">2 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">3 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col--lg-6">
+                <div class="collection-card">
+                  <img
+                    src="./assets/img/products/sofa-5.png"
+                    alt=""
+                    class="collection-card__image"
+                  />
+                  <div class="collection-card__badges">
+                    <div class="badge">Seater light blue</div>
+                    <div class="badge badge--variant-light">Desde 2800€</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Gray  -->
+          <div id="collection-gray" class="tab__pane">
+            <div class="row">
+              <div class="col-12 col--lg-6">
+                <div class="row">
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">Seater gray sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-2.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">Single chair</div>
+                        <div class="badge badge--variant-light">
+                          Desde 1500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-3.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">2 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col--sm-6">
+                    <div class="collection-card">
+                      <img
+                        src="./assets/img/products/sofa-1.png"
+                        alt=""
+                        class="collection-card__image"
+                      />
+                      <div class="collection-card__badges">
+                        <div class="badge">3 Seater sofa</div>
+                        <div class="badge badge--variant-light">
+                          Desde 2500€
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col--lg-6">
+                <div class="collection-card">
+                  <img
+                    src="./assets/img/products/sofa-5.png"
+                    alt=""
+                    class="collection-card__image"
+                  />
+                  <div class="collection-card__badges">
+                    <div class="badge">3 Seater sofa</div>
+                    <div class="badge badge--variant-light">Desde 2500€</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

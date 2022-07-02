@@ -17,3 +17,9 @@
   justify-content: space-between;
   margin-bottom: 26px;
 }
+@media (max-width: 769px) {
+  .image-collection__filter {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
