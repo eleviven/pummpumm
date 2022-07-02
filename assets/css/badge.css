@@ -1,0 +1,20 @@
+/* Badge */
+.badge {
+  border-radius: var(--rounded-xl);
+  white-space: nowrap;
+  font-weight: 400;
+}
+/* Badge Variants */
+.badge {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+.badge--variant-light {
+  color: var(--color-blackAlpha-500);
+  background-color: var(--color-white);
+}
+/* Badge Sizes */
+.badge {
+  padding: 5.5px 13px;
+  font-size: var(--font-size-md);
+}
