@@ -8,8 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-gray-dark);
-  background-color: var(--color-gray);
+  color: var(--color-gray);
+  background-color: var(--color-gray-light);
   width: 20px;
   height: 20px;
   user-select: none;
