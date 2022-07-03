@@ -9,7 +9,13 @@
     <meta name="description" content="Discover modern and cool sofas" />
     <meta name="keywords" content="" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="preload"
+      href="./assets/css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./assets/css/style.css" /></noscript>
   </head>
   <body>
     <!-- Navbar -->
@@ -803,6 +809,7 @@
                     target="_blank"
                     class="footer__social-link"
                     rel="noreferrer"
+                    aria-label="instagram"
                   >
                     <svg
                       width="19"
@@ -828,6 +835,7 @@
                     target="_blank"
                     class="footer__social-link"
                     rel="noreferrer"
+                    aria-label="facebook"
                   >
                     <svg
                       width="19"
@@ -851,6 +859,7 @@
                     target="_blank"
                     class="footer__social-link"
                     rel="noreferrer"
+                    aria-label="twitter"
                   >
                     <svg
                       width="21"
