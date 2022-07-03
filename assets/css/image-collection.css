@@ -6,7 +6,7 @@
   margin-bottom: 59px;
 }
 .image-collection__container {
-  max-width: calc(var(--container-lg) + 32px);
+  max-width: calc(var(--container-lg) + 30px);
 }
 .image-collection .row {
   margin: -1.5px;
