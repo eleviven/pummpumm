@@ -10,6 +10,8 @@ document.getElementById("mailingForm").addEventListener("submit", function (e) {
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
+    alert(`${data.email} has added to our list`);
+    e.target.reset();
     console.log(data);
   } catch (error) {
     console.log(error);
@@ -21,12 +23,12 @@ function validateForm(elements) {
   const errors = {};
 
   elements.forEach((formElement) => {
-      const isValid = formElement.checkValidity();
-      formElement.classList.remove("input--variant-error");
+    const isValid = formElement.checkValidity();
+    formElement.classList.remove("input--variant-error");
 
-      if(formElement.nextElementSibling){
-        formElement.nextElementSibling.remove()
-      }
+    if (formElement.nextElementSibling) {
+      formElement.nextElementSibling.remove();
+    }
 
     if (!isValid) {
       errors[formElement.name] = formElement.validationMessage;

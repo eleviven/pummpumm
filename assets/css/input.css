@@ -23,5 +23,5 @@
 }
 /* Input Variants */
 .input--variant-error {
-  border-color: red;
+  border-color: var(--color-red);
 }
