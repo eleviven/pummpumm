@@ -3,6 +3,7 @@
 @import url(./grid.css);
 @import url(./utils.css);
 @import url(./header.css);
+@import url(./input.css);
 @import url(./button.css);
 @import url(./icon-button.css);
 @import url(./badge.css);
@@ -18,6 +19,7 @@
 @import url(./marquee.css);
 @import url(./collection-card.css);
 @import url(./partners.css);
+@import url(./footer.css);
 
 /********* Variables *********/
 :root {
@@ -38,6 +40,7 @@
   --color-gray-dark: #292c35;
   --color-blackAlpha-300: rgba(0, 0, 0, 0.3);
   --color-blackAlpha-500: rgba(0, 0, 0, 0.5);
+  --color-blackAlpha-600: rgba(0, 0, 0, 0.6);
   /* Border Radius */
   --rounded-sm: 6px;
   --rounded-md: 8px;

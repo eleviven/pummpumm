@@ -1,0 +1,27 @@
+/* Input */
+.input__group {
+  position: relative;
+  width: 100%;
+}
+.input {
+  background-color: var(--color-default);
+  border: 1px solid #d8d8d8;
+  border-radius: var(--rounded-lg);
+  width: 100%;
+  font-size: var(--font-size-md);
+}
+.input__error-text {
+  display: block;
+  color: var(--color-red);
+  margin-top: 5px;
+  font-size: var(--font-size-xs);
+}
+/* Input Sizing */
+.input {
+  height: 40px;
+  padding: 9px 16px;
+}
+/* Input Variants */
+.input--variant-error {
+  border-color: red;
+}
