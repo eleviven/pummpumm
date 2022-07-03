@@ -1,0 +1,10 @@
+.image-marquee {
+  position: relative;
+  width: 100%;
+  margin-bottom: 54px;
+}
+.image-marquee__content {
+  position: absolute !important;
+  bottom: 11px;
+  left: 0;
+}

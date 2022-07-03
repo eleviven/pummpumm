@@ -14,6 +14,8 @@
 @import url(./image-review.css);
 @import url(./rating-stack.css);
 @import url(./image-collection.css);
+@import url(./image-marquee.css);
+@import url(./marquee.css);
 @import url(./collection-card.css);
 
 /********* Variables *********/
@@ -50,6 +52,7 @@
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 1.875rem;
   --font-size-4xl: 3.125rem;
+  --font-size-5xl: 5rem;
   /* Container */
   --container-lg: 1380px;
   --container-md: 960px;
@@ -76,6 +79,10 @@ button:focus-within {
   box-shadow: 0px 0px 0px 2px var(--color-blue);
 }
 /********* Typography *********/
+h1,
+.h1 {
+  font-size: var(--font-size-5xl);
+}
 h2,
 .h2 {
   font-size: var(--font-size-4xl);
@@ -90,6 +97,10 @@ h4,
 }
 
 @media (max-width: 992px) {
+  h1,
+  .h1 {
+    font-size: var(--font-size-4xl);
+  }
   h2,
   .h2 {
     font-size: var(--font-size-3xl);
@@ -105,6 +116,10 @@ h4,
 }
 
 @media (max-width: 769px) {
+  h1,
+  .h1 {
+    font-size: var(--font-size-3xl);
+  }
   h2,
   .h2 {
     font-size: var(--font-size-2xl);
